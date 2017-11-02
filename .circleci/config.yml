@@ -49,23 +49,23 @@ jobs:
             - /home/reaction/.meteor/local
 
       - run:
-          command: .circleci/build.sh
-          no_output_timeout: 30m
-
-      - run:
           command: .reaction/jsdoc/build.sh
           no_output_timeout: 2m
 
-      # deploy the build (if on a deployment branch)
-
+# Courivine and LeahLovise
       - deploy:
-          name: Deploy to S3 if tests pass and branch is Master
+          name: Deploy to rancher if tests pass and branch is courivine
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              aws s3 sync /tmp/reaction-docs ${API_DOC_BUCKET} --delete --region ${API_DOC_BUCKET_REGION}
+            if [ "${CIRCLE_BRANCH}" == "courivine" ]; then
+              echo "Building courivine"
+              bash .courivine/build.sh
+              echo "Deploying courivine"
+              bash .courivine/deploy.sh
+            elif [ "${CIRCLE_BRANCH}" == "leahlovise" ]; then
+              echo "Building leahlovise"
+              bash .leahlovise/build.sh
+              echo "Deploying leahlovise"
+              bash .leahlovise/deploy.sh
             else
-              echo "Not master branch so not deploying"
+              echo "Not courivine or leahlovise branch so not deploying"
             fi
-      - deploy:
-          name: Docker Image Deploment
-          command: .circleci/deploy.sh
