@@ -10,6 +10,8 @@ if [[ "$CIRCLE_BRANCH" != "leahlovise" && "$CIRCLE_BRANCH" != *"docker"* ]]; the
   exit 0
 fi
 
+git submodule update --init --remote --recursive
+
 # build new image
 docker build \
   --build-arg TOOL_NODE_FLAGS="--max-old-space-size=4096" \
