@@ -1,4 +1,4 @@
-[submodule "imports/plugins/custom/reaction-generic-theme"]
-	path = imports/plugins/custom/reaction-generic-theme
+[submodule "imports/plugins/custom/leahlovise-theme"]
+	path = imports/plugins/custom/leahlovise-theme
 	url = git@github.com:joshuacox/reaction-generic-theme.git
 	branch = leahlovise
