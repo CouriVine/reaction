@@ -2,3 +2,7 @@
 	path = imports/plugins/custom/courivine
 	url = git@github.com:joshuacox/reaction-generic-theme.git
 	branch = courivine
+[submodule "imports/plugins/custom/courivine-theme"]
+	path = imports/plugins/custom/courivine-theme
+	url = git@github.com:joshuacox/reaction-generic-theme.git
+	branch = courivine
