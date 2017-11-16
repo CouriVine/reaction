@@ -1,4 +1,4 @@
-[submodule "imports/plugins/custom/leahlovise-theme"]
-	path = imports/plugins/custom/leahlovise-theme
-	url = git@github.com:joshuacox/reaction-generic-theme.git
-	branch = leahlovise
+[submodule "imports/plugins/custom/leahloviseLL"]
+	path = imports/plugins/custom/leahloviseLL
+	url = https://github.com/joshuacox/reaction-hydrotik-plugin.git
+	branch = leahloviseLL
