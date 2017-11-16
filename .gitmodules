@@ -1,0 +1,4 @@
+[submodule "imports/plugins/custom/leahloviseLL"]
+	path = imports/plugins/custom/leahloviseLL
+	url = https://github.com/joshuacox/reaction-hydrotik-plugin.git
+	branch = leahloviseLL
