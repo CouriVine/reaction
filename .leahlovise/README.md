@@ -12,6 +12,12 @@ git push courihub leahlovise
 you'll need the courihub remote in git config:
 
 ```
+git remote add courihub git@github.com:CouriVine/reaction.git
+```
+
+which results in:
+
+```
 [remote "courihub"]
         url = git@github.com:CouriVine/reaction.git
         fetch = +refs/heads/*:refs/remotes/courihub/*
